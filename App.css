@@ -1,0 +1,77 @@
+.App {
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+h1 {
+  font-size: 45px;
+  color: green;
+  margin: 0 0 15px 0;
+  margin-bottom: 30px;
+}
+
+.container {
+  position: relative;
+  padding-top: 20px;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url('/images/india-map.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.container * {
+  position: relative;
+  z-index: 1;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid gray;
+  padding: 10px;
+  text-align: center;
+  color: black;
+
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+.symbol {
+  width: 45px;
+  height: 45px;
+}
